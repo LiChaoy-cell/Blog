@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+</head>
+<body>
+    <div class="todu-app">
+        <div class="title">李超阳的todo app</div>
+        <div class="todo-from">
+            <input class="todo-input" type="text" placeholder="add - todo">
+            <div class="todo-button">daa-todo</div>
+        </div>
+        <div class="item completed">
+            <div><input type="checkbox">
+            <span class="name">打火影忍者</span>
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div><input type="checkbox">
+            <span class="name">上课</span>
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div><input type="checkbox">
+            <span class="name">洗澡</span>
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+    </div>
+    <script>
+        console.log('hello')
+    </script>
+
+    <style>
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+        .del{
+            color: red;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px ;
+        }
+        .todo-button{
+            width: 100px;
+            height: 52px;
+            border-radius: 0 20px 20px 0;
+            line-height: 52px;
+            text-align: center;
+            background: linear-gradient(
+            to right,
+            rgb(113,65,168),
+            rgba(44,114,254,1));
+            color:#ffff;
+            cursor: pointer;
+            user-select: none;
+        }
+        .todo-input{
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border: 1px solid #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+        }
+        .todo-from{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+       body{
+        background: linear-gradient(
+            to right,
+            rgb(113,65,168),
+            rgba(44,114,254,1)
+        );
+       }
+       .todu-app{
+        width: 98%;
+        height: 500px;
+        background-color: #ffff;
+        border-radius: 10px;
+        margin-top: 40px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        margin-left: 1%;
+       }
+       .title{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 20px;
+       }
+    </style>
+
+</body>
+</html>
